@@ -653,16 +653,21 @@ body {
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: center;
   margin-bottom: 3rem;
+}
+
+.contact-info {
+  max-width: 700px;
+  width: 100%;
 }
 
 .contact-info h3 {
   font-size: 1.8rem;
   color: var(--text-dark);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .info-item {
@@ -779,6 +784,8 @@ body {
   background: var(--white);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .cta-whatsapp h3 {
@@ -1026,8 +1033,7 @@ body {
     font-size: 3rem;
   }
 
-  .about-content,
-  .contact-content {
+  .about-content {
     gap: 3rem;
   }
 
@@ -1088,10 +1094,13 @@ body {
     justify-content: center;
   }
 
-  .about-content,
-  .contact-content {
+  .about-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .contact-info {
+    padding: 0;
   }
 
   .services-grid {
